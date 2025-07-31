@@ -1,5 +1,6 @@
 import {RemarkableOptions} from '../../../../types/remarkable';
 import {Remarkable} from 'remarkable';
+import remarkableKatex from 'remarkable-katex';
 import hljs from 'highlight.js';
 
 declare global {
@@ -22,6 +23,7 @@ export class RemarkableConfig {
         remarkable.use(plugin.plugin, plugin.options);
       });
     }
+    remarkable.use(remarkableKatex);
   }
 
   private static instantiate(customConfig?: RemarkableOptions) {

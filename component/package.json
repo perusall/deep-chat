@@ -71,7 +71,9 @@
   ],
   "dependencies": {
     "@microsoft/fetch-event-source": "^2.0.1",
+    "katex": "^0.16.22",
     "remarkable": "^2.0.1",
+    "remarkable-katex": "^1.2.1",
     "speech-to-element": "^1.0.4"
   }
 }
